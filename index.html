@@ -49,7 +49,7 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -59,28 +59,32 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" class="active" href="http://www.zacharysmith.science">Zachary Smith</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav">
+						<li> 
+							<a class="active" href="http://www.zacharysmith.science"><strong>Zachary Smith</strong></a>
+						</li>
+											
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Solar Cars<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="http://www.zacharysmith.science/celeritas">Celeritas</a></li>
 								<li><a href="http://www.zacharysmith.science/navitas">Navitas</a></li>
 							</ul>
+						</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Embedded Systems Projects<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="http://www.zacharysmith.science/celeritas-bms">Battery Monitoring System - Celeritas</a></li>
 								<li><a href="http://www.zacharysmith.science/navitas-lcu">Light Control Unit - Navitas</a></li>
 							</ul>
-						<li><a href="http://www.zacharysmith.science/works-of-navitas">Art</a></li>
-						<li><a href="http://www.zacharysmith.science/resume">Résumé<span class="sr-only">(current)</span></a></li>
-							
 						</li>
+						<li><a href="http://www.zacharysmith.science/works-of-navitas">Art</a></li>
+						<li><a href="http://www.zacharysmith.science/contact">Contact<span class="sr-only">(current)</span></a></li>
+							
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -88,290 +92,316 @@
 	
 		<div id="container" align="center">
 			<div class="inner">
-				<a 	href="images/celeritas.png"
-					class="fresco"
-					data-fresco-caption=""
-					data-fresco-group="header">
-					<img src="images/celeritas.png" class="img-responsive" class="col-sm-12" />
-				</a>
-				
+				<!-- Carousel================================================== -->
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<a 	href="images/celeritas.png"
+								class="fresco"
+								data-fresco-caption="Celeritas, making it's 2,325 MPG-E winning run. (Photography courtesy of <a href=&quot;http://news.nationalgeographic.com/news/energy/2012/08/pictures/120817-shell-eco-marathon-2012/&quot;>National Geographic</a>)"
+								data-fresco-group="header">
+								<img src="images/carousel-celeritas.jpg" class="img-responsive" class="first-slide" class="col-sm-12" />
+							</a>
+							<div class="container">
+								<div class="carousel-caption">
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<a href="images/celeritas_unveiling.jpg"
+							   class="fresco"
+							   data-fresco-caption="The unveiling of the car. Fun fact, our president at the time decided to schedule the unveiling for april 1st, that way if the car wasn't finished by the unveiling he could play it off as an april fools joke."
+							   data-fresco-group="header">
+							   <img src="images/carousel-unveiling.jpg" class="img-responsive" class="second-slide" />
+							</a>
+						</div>
+						<div class="item">
+							<a href="images/homecoming_blue_led.jpg"
+								class="fresco"
+								data-fresco-caption="Lining up for the parade and testing the LEDs for the car. The parade typically starts after sunset, so the parade itself takes place at night."
+								data-fresco-group="header">
+								<img src="images/carousel-blue.jpg" class="third-slide" />
+							</a>	
+							<div class="container">
+								<div class="carousel-caption">
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div><!-- /.carousel -->
+				</div>
+	
 				<header>
 					<h1 align="center">Celeritas</h1>
+					<h3 align ="center">Electrical Engineering Director (May 2010 - May 2011)</h3>
+					<h3 align ="center">Safety Director (January 2010 - May 2010)</h3>
 				</header>
-			</div>
-			
-			<div class="inner">	
+				
 				<div align="justify">
 					<p>
-						Celeritas was purdue solar's eight car. During the two year design and build cycle, I was elected to as safety director for a semester, and after, as the electrical engineering director for a year. Celeritas was the team's first urban concept car, a racing category for the Shell Eco-Marathon. The urban concept category was created to encourage design of concept cars, that were more like your typical everyday car. Celeritas was also the first Purdue Solar car with a fully computerized electronic system. The custom built electronics in the car utilized a CAN bus for the system level communications and PIC microcontrollers for the onboard processing. Celeritas won first place in both the 2011 and 2012 Shell Eco-Marathon with 2,200 MPG-E  and 2,325 MPG-E respectively. The team also won the Communications offtrack award for both years.
+						I joined Purdue Solar Racing in September of 2009, at the start of the two-year design and build cycle for the team’s 8th solar car, Celeritas. During this period, I was elected as Safety Director and as Electrical Engineering Director. Celeritas won first place in both the 2011 and 2012 Shell Eco-Marathons with 2,200 MPG-E and 2,325 MPG-E respectively. The team also won the Communications offtrack award, an award for the team who delivers the most impactful campaign to promote their team, for both years.
+					</p>
+					<p>
+						The car was named after the latin word for swiftness, celeritas. The "c" in the equation "E=mc<sup>2</sup>" is said to have come from the word <em> celeritas</em>, so the team decided the first three digits of the speed of light, 299, would make for a good race number. 
+						Celeritas was the team's first urban concept car, a racing category for the Shell Eco-Marathon, and the team’s first fully computerized solar car. The custom-built electronics in the car used a CAN bus for the system-level communications and PIC microcontrollers for the onboard processing. 
 					</p>
 				</div>
 			</div>
-			
-		<div class="gallery">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-3">
-						<a href="images/wind_tunnel_model.JPG"
-						   class="fresco"
-						   data-fresco-caption="The windtunnel model of celeritas, to test and verify the 
-							Computational Fluid Dynamics (CFD) results. The team used the Boeing Windtunnel housed at the Purdue Airport."
-						   data-fresco-group="unique_name">
-						   <img src="images/wind_tunnel_model.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/carbonfiber.JPG"
-						   class="fresco"
-						   data-fresco-caption="The two halves of the carbon fiber body are glued together at the seem, and the 
-							spots for the door, trunk, hood, windows, and wheels are cut out."
-						   data-fresco-group="unique_name">
-						   <img src="images/carbonfiber.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/off_to_paint.JPG"
-						   class="fresco"
-						   data-fresco-caption="The fully assembled body of the car, getting shipped out for clear coat and paint. The 
-						   clear helps protect the carbon fiber from degrading in the UV rays of the sun."
-						   data-fresco-group="unique_name">
-						   <img src="images/off_to_paint.JPG" class="img-responsive" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="images/fresh_paint.jpg"
-						   class="fresco"
-						   data-fresco-caption="The car being brought back from paint. The car's name, Celeritas, means swiftness in latin. The &quot;c&quot; in the equation &quot;E=mc^2&quot; is said to have come from the word celeritas, so we thought the first three digits of the speed of light, 299, would make for a good race number."
-						   data-fresco-group="unique_name">
-						   <img src="images/fresh_paint.jpg" class="img-responsive" />
-						</a>
-					</div>	
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-3">
-						<a href="images/unassembled_motor.jpg"
-						   class="fresco"
-						   data-fresco-caption="The motor used in Celeritas is a high efficiency motor designed by the Commonwealth Scientific and Industrial Research Organisation
-						   (CISRO). Purchasing the motor only gets you the rare earth magnets and the stator, leaving the motor casing design and 
-						   construction up to you. In our case it was left up to the Mechanical Engineering Team to design a light weight casing to handle the proper loads."
-						   data-fresco-group="unique_name">
-						   <img src="images/unassembled_motor.jpg" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/assembled_motor.JPG"
-						   class="fresco"
-						   data-fresco-caption="The assembled motor casing. We later added carbon fiber panels to prevent debris from getting tossed up and causing damage to the inside of the motor housing."
-						   data-fresco-group="unique_name">
-						   <img src="images/assembled_motor.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/motor_assembly.jpg"
-						   class="fresco"
-						   data-fresco-caption="The magnets in a motor this size are incredibly strong and incredibly dangerous. If your hand gets caught between the plates, you will no longer have a hand.
-						   this rig was designed to slowly align the plates and safely bring the magnets together."
-						   data-fresco-group="unique_name">
-						   <img src="images/motor_assembly.jpg" class="img-responsive" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="images/motor_test_stand.JPG"
-						   class="fresco"
-						   data-fresco-caption="The motor mounted to the test bench for off board testing while interfaced with the other systems. If you notice the missing screw on the left side of the testing rig, this picture was actually taken after the adjustment of the rig to accommodate the full wheel, and was in the process of being properly fastened down."
-						   data-fresco-group="unique_name">
-						   <img src="images/motor_test_stand.JPG" class="img-responsive" />
-						</a>
-					</div>	
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-3">
-						<a href="images/test_bench.JPG"
-						   class="fresco"
-						   data-fresco-caption="To test the electrical systems while the car was still being built, we designed a test bench set up to allow all the systems to interact with each other outside of the car. As a note, I'm pretty sure the PSPICE simulation on that computer is someone's ECE 255 homework."
-						   data-fresco-group="unique_name">
-						   <img src="images/test_bench.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/ee_room.JPG"
-						   class="fresco"
-						   data-fresco-caption="The marketing director wanted a picture of all the computers with EE looking things on them."
-						   data-fresco-group="unique_name">
-						   <img src="images/ee_room.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/headlights.JPG"
-						   class="fresco"
-						   data-fresco-caption="Me, assembling the lights for the car. We used Luxeon Rebel Stars mounted to aluminium heatsinks, and attached focusing lenses to the top using a silicone sealant."
-						   data-fresco-group="unique_name">
-						   <img src="images/headlights.JPG" class="img-responsive" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="images/celeritas_batterypack.JPG"
-						   class="fresco"
-						   data-fresco-caption="For the battery pack, we used twelve 10Ah Lithium Iron Phosphate (LiFePO4) batteries. The circuit board you see inside the battery pack is the Lithium Ion Monitoring Module (LIMM). The yellow fabric on the inside of the box is kevlar, to insulate the batteries from the conductive carbon fiber enclosure."
-						   data-fresco-group="unique_name">
-						   <img src="images/celeritas_batterypack.JPG" class="img-responsive" />
-						</a>
-					</div>	
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-3">
-						<a href="images/rear_junction_box.JPG"
-						   class="fresco"
-						   data-fresco-caption="The rear junction box is the enclosure where all the systems and wires in the back of the car made their connections. Poor planning in the early design planning phases led to inefficient wiring, adding weight to the car. This was one of the big changes we made in Navitas, that helped make the car lighter and improved repairability of the car."
-						   data-fresco-group="unique_name">
-						   <img src="images/rear_junction_box.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/celeritas_unveiling.jpg"
-						   class="fresco"
-						   data-fresco-caption="The unveiling of the car. Fun fact, our president at the time decided to schedule the unveiling for april 1st, that way if the car wasn't finished by the unveiling he could play it off as an april fools joke."
-						   data-fresco-group="unique_name">
-						   <img src="images/celeritas_unveiling.jpg" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/chassis_and_molds.JPG"
-						   class="fresco"
-						   data-fresco-caption="The chassis fitted into the bottom mold of the car. The giant panel in the middle of the car, served as a fire barrier to protect the driver from the batteries in case of an accident."
-						   data-fresco-group="unique_name">
-						   <img src="images/chassis_and_molds.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/wooden_suspension.JPG"
-						   class="fresco"
-						   data-fresco-caption="The rear suspension on the motor wheel being fit into the car, with a temporary wooden block suspension spring."
-						   data-fresco-group="unique_name">
-						   <img src="images/wooden_suspension.JPG" class="img-responsive" />
-						</a>
-					</div>	
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-3">
-						<a href="images/solar_array_assembly.JPG"
-						   class="fresco"
-						   data-fresco-caption="For the solar array, we used a small one inch strip of adhesive to keep the edges flush with the body of the car. We then drilled holes in the empty spots of the panels, and used fishing line to &quot;sew&quot; the solar panels to the car. A member of the team actually emailed one of the members of the Myth Busters for removable solar array suggestions, and this was their solution."
-						   data-fresco-group="unique_name">
-						   <img src="images/solar_array_assembly.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/solar_array_trunk.JPG"
-						   class="fresco"
-						   data-fresco-caption="Here you can see us threading the fishing line through the solar cells. The process was very time consuming, but made repairing and replacing solar panels significantly less expensive. On cars in the past, good panels were often destroyed in the process of trying to remove the high strength adhesive that the old array attachment process used."
-						   data-fresco-group="unique_name">
-						   <img src="images/solar_array_trunk.JPG" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/solar_cell_threading.JPG"
-						   class="fresco"
-						   data-fresco-caption="More solar cell sewing. After attaching the cells, we had to make sure our car wasn't afraid of the sun (that no short circuits were made across the carbon fiber body)."
-						   data-fresco-group="unique_name">
-						   <img src="images/solar_cell_threading.JPG" class="img-responsive" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="images/hood.jpg"
-						   class="fresco"
-						   data-fresco-caption="The completed hood of the car."
-						   data-fresco-group="unique_name">
-						   <img src="images/hood.jpg" class="img-responsive" />
-						</a>
-					</div>	
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-3">
-						<a href="images/race_team_picture.jpg"
-						   class="fresco"
-						   data-fresco-caption="The race team for the 2011 Shell Eco-Marathon."
-						   data-fresco-group="unique_name">
-						   <img src="images/race_team_picture.jpg" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/1st_place_2011.jpg"
-						   class="fresco"
-						   data-fresco-caption="Celeritas won 1st place in the urban concept division, with 2200 miles per gallon equivalent (MPG-E), in the 2011 Shell Eco-Marathon. "
-						   data-fresco-group="unique_name">
-						   <img src="images/1st_place_2011.jpg" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/1st_place_2012.jpg"
-						   class="fresco"
-						   data-fresco-caption="Celeritas won 1st place in the urban concept division, with 2325 miles per gallon equivalent (MPG-E), in the 2012 Shell Eco-Marathon. Improvements in MPG-E were made mostly in a revamped controls algorithm for the motor controller."
-						   data-fresco-group="unique_name">
-						   <img src="images/1st_place_2012.jpg" class="img-responsive" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="images/bling.jpg"
-						   class="fresco"
-						   data-fresco-caption="The big trophies are 1st place trophies from the Shell Eco-Marathon, our team won every year it entered the race. The smaller trophies are offtrack awards. Seen here are two technical innovation awards, a communication award, and a people's choice award."
-						   data-fresco-group="unique_name">
-						   <img src="images/bling.jpg" class="img-responsive" />
-						</a>
-					</div>	
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="col-sm-3">
-						<a href="images/homecoming_prep.jpg"
-						   class="fresco"
-						   data-fresco-caption="Getting the car ready for the homecoming parade. We like to run LED strips and E-L wire along the car, since the parade runs at night. For this year we decided to also put a sound system in the back of Celeritas."
-						   data-fresco-group="unique_name">
-						   <img src="images/homecoming_prep.jpg" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/homecoming_sound_system.jpg"
-						   class="fresco"
-						   data-fresco-caption="Celeritas' sound system for the homecoming parade."
-						   data-fresco-group="unique_name">
-						   <img src="images/homecoming_sound_system.jpg" class="img-responsive" />
-						</a>
-					</div>	
-					<div class="col-sm-3">
-						<a href="images/homecoming_blue_led.jpg"
-						   class="fresco"
-						   data-fresco-caption="Lining up for the parade and testing the LEDs for the car. The parade typically starts after sunset, so the parade itself takes place at night."
-						   data-fresco-group="unique_name">
-						   <img src="images/homecoming_blue_led.jpg" class="img-responsive" />
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a href="images/driver_display.jpg"
-						   class="fresco"
-						   data-fresco-caption="The driver display for the car. Giant. Seven Segs."
-						   data-fresco-group="unique_name">
-						   <img src="images/driver_display.jpg" class="img-responsive" />
-						</a>
-					</div>	
-				</div>
-			</div>
-			
-			
-			
-		</div>
 
+			
+			<div class="gallery">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+							<a href="images/wind_tunnel_model.JPG"
+							   class="fresco"
+							   data-fresco-caption="The wind tunnel model of Celeritas, to test and verify the Computational Fluid Dynamics (CFD) results. The team used the Boeing Windtunnel housed at the Purdue Airport."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_wind_tunnel_model.JPG" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/carbonfiber.JPG"
+							   class="fresco"
+							   data-fresco-caption="The two halves of the carbon fiber body are glued together at the seam, then the spots for the door, trunk, hood, windows, and wheels are cut out."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_carbonfiber.JPG" class="img-responsive" />
+							</a>
+						</div>	
+
+						<div class="col-sm-3">
+							<a href="images/fresh_paint.jpg"
+							   class="fresco"
+							   data-fresco-caption="We paint a layer clearcoat and use a vinyl wrap design to cover the seams of the car. The clearcoat helps protect the carbon fiber from degrading in the UV rays of the sun."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_fresh_paint.jpg" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/unassembled_motor.jpg"
+							   class="fresco"
+							   data-fresco-caption="The motor used in Celeritas is a high-efficiency motor designed by the Commonwealth Scientific and Industrial Research Organisation (CISRO). CSIRO chooses to only sell the stator windings and magnets, without any sort of casing for the motor. This left the design of the motor casing to the mechanical engineering team."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_unassembled_motor.jpg" class="img-responsive" />
+							</a>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+							<a href="images/assembled_motor.JPG"
+							   class="fresco"
+							   data-fresco-caption="The assembled motor casing. We later added carbon fiber panels to prevent debris from getting tossed up from the road and causing damage to the inside of the motor housing."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_assembled_motor.JPG" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/motor_assembly.jpg"
+							   class="fresco"
+							   data-fresco-caption="The magnets in a motor this size are incredibly strong and dangerous. If your hand gets caught between the magnetic plates, you will no longer have a hand. This rig was designed to slowly align the plates and safely bring the magnets together."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_motor_assembly.jpg" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/motor_test_stand.JPG"
+							   class="fresco"
+							   data-fresco-caption="The motor mounted to the test bench for offboard testing while interfaced with the other systems. If you note the missing screw on the left side of the testing rig, this picture was actually taken after the adjustment of the rig to accommodate the full wheel, and was in the process of being properly fastened down."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_motor_test_stand.JPG" class="img-responsive" />
+							</a>						
+						</div>
+						<div class="col-sm-3">
+							<a href="images/test_bench.JPG"
+							   class="fresco"
+							   data-fresco-caption="To test the electrical systems while the car was still being built, we designed a test bench set up to allow all the systems to interact with each other outside of the car. As a note, I'm pretty sure the PSPICE simulation on that computer is someone's ECE 255 homework."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_test_bench.JPG" class="img-responsive" />
+							</a>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+							<a href="images/headlights.JPG"
+							   class="fresco"
+							   data-fresco-caption="Me, assembling the lights for the car. We used Luxeon Rebel Stars mounted to aluminium heatsinks, and attached focusing lenses to the top using a silicone sealant."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_headlights.JPG" class="img-responsive" />
+							</a>
+						</div>	
+		
+						<div class="col-sm-3">
+							<a href="images/celeritas_batterypack.JPG"
+							   class="fresco"
+							   data-fresco-caption="For the battery pack, we used twelve 10Ah Lithium Iron Phosphate (LiFePO4) batteries. The circuit board seen inside the battery pack is the Lithium Ion Monitoring Module (LIMM). The yellow fabric on the inside of the box is kevlar, to insulate the batteries from the conductive carbon fiber enclosure."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_celeritas_batterypack.JPG" class="img-responsive" />
+							</a>
+						</div>
+						<div class="col-sm-3">
+							<a href="images/rear_junction_box.JPG"
+							   class="fresco"
+							   data-fresco-caption="The rear junction box is the enclosure where all the systems and wires in the back of the car made their connections. Poor planning in the early design planning phases led to inefficient wiring, adding weight to the car. This was one of the big changes we made in Navitas, that helped make the car lighter and improved repairability of the car."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_rear_junction_box.JPG" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/chassis_and_molds.JPG"
+							   class="fresco"
+							   data-fresco-caption="We fitted the chassis into the bottom mold of the car. The giant panel in the middle of the car served as a fire barrier to protect the driver from the batteries in case of an accident."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_chassis_and_molds.JPG" class="img-responsive" />
+							</a>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+							<a href="images/wooden_suspension.JPG"
+							   class="fresco"
+							   data-fresco-caption="The rear suspension on the motor wheel fitted into the car with a temporary wooden block suspension spring."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_wooden_suspension.JPG" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/solar_array_assembly.JPG"
+							   class="fresco"
+							   data-fresco-caption="For the solar array, we used a small one-inch strip of adhesive to keep the edges flush with the body of the car. We then drilled holes in the empty spots of the panels, and sewed the solar panels to the car with fishing line. We emailed one of the members of the <em><strong>Myth Busters</em></strong> for removable solar array suggestions, and this was their solution."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_solar_array_assembly.JPG" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/solar_array_trunk.JPG"
+							   class="fresco"
+							   data-fresco-caption="Here you can see us threading the fishing line through the solar cells. The process was very time consuming, but made repairing and replacing solar panels significantly less expensive.In the past, good panels on cars were often destroyed in the process of trying to remove the high-strength adhesive that the old array attachment process used."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_solar_array_trunk.JPG" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/celeritas_unveiling.jpg"
+							   class="fresco"
+							   data-fresco-caption="The unveiling of the car. Fun fact, our president at the time decided to schedule the unveiling for April 1st, that way if the car wasn't finished by the unveiling he could play it off as an April Fool’s joke."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_celeritas_unveiling.jpg" class="img-responsive" />
+							</a>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+							<a href="images/homecoming_prep.jpg"
+							   class="fresco"
+							   data-fresco-caption="Getting the car ready for the homecoming parade. We like to run LED strips and EL wire along the car, since the parade runs at night. For this year we decided to also put a sound system in the back of Celeritas."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_homecoming_prep.jpg" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/homecoming_sound_system.jpg"
+							   class="fresco"
+							   data-fresco-caption="Celeritas's sound system for the homecoming parade."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_homecoming_sound_system.jpg" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/homecoming_blue_led.jpg"
+							   class="fresco"
+							   data-fresco-caption="Testing the car's LEDs while lining up for the nighttime parade procession."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_homecoming_blue_led.jpg" class="img-responsive" />
+							</a>					
+						</div>
+						<div class="col-sm-3">
+							<a href="images/driver_display.jpg"
+							   class="fresco"
+							   data-fresco-caption="The driver display for the car."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_driver_display.jpg" class="img-responsive" />
+							</a>					
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+							<a href="images/race_team_picture.jpg"
+							   class="fresco"
+							   data-fresco-caption="The race team for the 2011 Shell Eco-Marathon."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_race_team_picture.jpg" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/1st_place_2011.jpg"
+							   class="fresco"
+							   data-fresco-caption="Celeritas won 1st place in the urban concept division, with 2200 miles per gallon equivalent (MPG-E), in the 2011 Shell Eco-Marathon. "
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_1st_place_2011.jpg" class="img-responsive" />
+							</a>
+						</div>	
+						<div class="col-sm-3">
+							<a href="images/1st_place_2012.jpg"
+							   class="fresco"
+							   data-fresco-caption="Celeritas won 1st place in the urban concept division, with 2325 miles per gallon equivalent (MPG-E), in the 2012 Shell Eco-Marathon. Improvements in MPG-E were made mostly in a revamped controls algorithm for the motor controller."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_1st_place_2012.jpg" class="img-responsive" />
+							</a>
+						</div>
+						<div class="col-sm-3">
+							<a href="images/bling.jpg"
+							   class="fresco"
+							   data-fresco-caption="The big trophies are 1st place trophies from the Shell Eco-Marathon; our team won every year it entered the race. The smaller trophies are offtrack awards. Seen here are two technical innovation awards, a communication award, and a people's choice award."
+							   data-fresco-group="unique_name">
+							   <img src="images/tn_bling.jpg" class="img-responsive" />
+							</a>
+						</div>	
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+						</div>	
+						<div class="col-sm-3">
+						</div>	
+						<div class="col-sm-3">
+						</div>
+						<div class="col-sm-3">
+						</div>	
+					</div>
+				</div>
+			</div>
+			
+				<div class="inner">	
+					<footer>
+						<p><a href="http://www.zacharysmith.science/contact">Contact</a> &middot; <a href="#">Press</a></p>
+					</footer>
+				</div>
+		
+		</div>
 		
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
